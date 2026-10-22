@@ -2,9 +2,9 @@ name: Auto Update Lao Lottery
 
 on:
   schedule:
-    # ตั้งเวลารัน วันจันทร์ พุธ ศุกร์ เวลา 20:30 น. ตามเวลาไทย (UTC 13:30)
+    # ตั้งเวลารันทุกวัน จันทร์ พุธ ศุกร์ เวลา 20:30 น. ตามเวลาไทย (UTC 13:30)
     - cron: '30 13 * * 1,3,5'
-  workflow_dispatch:
+  workflow_dispatch: # อนุญาตให้กดปุ่มสั่งรันด้วยมือจากหน้าเว็บ GitHub ได้ทันที
 
 jobs:
   update-data:

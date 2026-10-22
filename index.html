@@ -1,53 +1,29 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>สมุดผลหวยลาว</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Prompt:wght@500;600&display=swap">
 <style>
 :root {
-  --bg: #EDF0F7;
-  --surface: #FFFFFF;
-  --surface2: #F4F6FB;
-  --ink: #0D1630;
-  --ink2: #444E69;
-  --muted: #747D97;
-  --line: #DADFEB;
-  --line2: #BFC7DA;
-  --accent: #C8102E;
-  --accent-ink: #FFFFFF;
-  --bar: #2A78D6;
-  --blue-soft: #E1EBFB;
-  --heat-lo: #E4EEFC;
-  --heat-hi: #0D366B;
-  --cell-ink: #0D1630;
-  --cell-ink-hi: #FFFFFF;
-  --div-neg: #2A78D6;
-  --div-mid: #EEF0F4;
-  --div-pos: #D03B3B;
-  --ok: #0A7A3E;
-  --warn: #8F5B00;
-  --warn-bg: #FFF1D6;
-  --ok-bg: #DDF3E6;
-  --f-display: 'Prompt', 'Noto Sans Thai', system-ui, sans-serif;
-  --f-body: 'IBM Plex Sans Thai', 'Noto Sans Thai', system-ui, sans-serif;
-  --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  --bg: #EDF0F7; --surface: #FFFFFF; --surface2: #F4F6FB; --ink: #0D1630; --ink2: #444E69; --muted: #747D97;
+  --line: #DADFEB; --line2: #BFC7DA; --accent: #C8102E; --accent-ink: #FFFFFF; --bar: #2A78D6; --blue-soft: #E1EBFB;
+  --heat-lo: #E4EEFC; --heat-hi: #0D366B; --cell-ink: #0D1630; --cell-ink-hi: #FFFFFF; --div-neg: #2A78D6;
+  --div-mid: #EEF0F4; --div-pos: #D03B3B; --ok: #0A7A3E; --warn: #8F5B00; --warn-bg: #FFF1D6; --ok-bg: #DDF3E6;
+  --f-display: 'Prompt', 'Noto Sans Thai', system-ui, sans-serif; --f-body: 'IBM Plex Sans Thai', 'Noto Sans Thai', system-ui, sans-serif; --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0A0F1F; --surface: #111A31; --surface2: #17213B; --ink: #EAEEF8; --ink2: #B4BDD4; --muted: #8792B0;
     --line: #243050; --line2: #34416A; --accent: #FF5B6E; --accent-ink: #1B0509; --bar: #3987E5; --blue-soft: #16284C;
     --heat-lo: #14254A; --heat-hi: #9EC5F4; --cell-ink: #DCE6F8; --cell-ink-hi: #0A1226;
-    --div-neg: #3987E5; --div-mid: #2B3350; --div-pos: #E66767;
-    --ok: #3DD28D; --warn: #F0B44C; --warn-bg: #3A2C10; --ok-bg: #12301F; color-scheme: dark;
+    --div-neg: #3987E5; --div-mid: #2B3350; --div-pos: #E66767; --ok: #3DD28D; --warn: #F0B44C; --warn-bg: #3A2C10; --ok-bg: #12301F; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0A0F1F; --surface: #111A31; --surface2: #17213B; --ink: #EAEEF8; --ink2: #B4BDD4; --muted: #8792B0;
   --line: #243050; --line2: #34416A; --accent: #FF5B6E; --accent-ink: #1B0509; --bar: #3987E5; --blue-soft: #16284C;
   --heat-lo: #14254A; --heat-hi: #9EC5F4; --cell-ink: #DCE6F8; --cell-ink-hi: #0A1226;
-  --div-neg: #3987E5; --div-mid: #2B3350; --div-pos: #E66767;
-  --ok: #3DD28D; --warn: #F0B44C; --warn-bg: #3A2C10; --ok-bg: #12301F; color-scheme: dark;
+  --div-neg: #3987E5; --div-mid: #2B3350; --div-pos: #E66767; --ok: #3DD28D; --warn: #F0B44C; --warn-bg: #3A2C10; --ok-bg: #12301F; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font: 400 15px/1.6 var(--f-body); padding-block: 0 56px; }
@@ -109,9 +85,6 @@ label.f { display: grid; gap: 4px; font-size: 13px; color: var(--ink2); }
 .stub { padding: 18px 16px; border-right: 2px dashed var(--line2); display: grid; align-content: space-between; gap: 14px; }
 .stub .dt { font-family: var(--f-display); font-weight: 600; font-size: 22px; line-height: 1.2; }
 .stub .wd { color: var(--ink2); font-size: 14px; }
-.ticket::before, .ticket::after { content: ""; position: absolute; left: 160px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); }
-.ticket::before { top: -9px; }
-.ticket::after { bottom: -9px; }
 .tbody { padding: 18px 20px 16px; display: grid; gap: 10px; min-width: 0; }
 .digits, .brks { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 6px; max-width: 520px; }
 .dg { aspect-ratio: 3 / 4; max-height: 84px; display: grid; place-items: center; border: 1px solid var(--line2); border-radius: 8px; font: 600 clamp(26px, 7vw, 44px) var(--f-mono); background: var(--surface2); }
@@ -120,11 +93,6 @@ label.f { display: grid; gap: 4px; font-size: 13px; color: var(--ink2); }
 .brk.b2 { border-top-color: var(--accent); color: var(--ink); }
 .brk b { font-weight: 600; }
 .nextline { font-size: 13px; color: var(--muted); }
-@media (max-width: 620px) {
-  .ticket { grid-template-columns: minmax(0, 1fr); }
-  .stub { border-right: 0; border-bottom: 2px dashed var(--line2); grid-auto-flow: column; align-items: end; justify-content: space-between; }
-  .ticket::before, .ticket::after { display: none; }
-}
 
 .tw { overflow-x: auto; }
 .tbl { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
@@ -134,7 +102,6 @@ label.f { display: grid; gap: 4px; font-size: 13px; color: var(--ink2); }
 .tbl tr.sel td { background: var(--blue-soft); }
 .tbl .num { font-family: var(--f-mono); }
 .tbl td .lastTwo, .lastTwo { color: var(--accent); font-weight: 600; }
-.ybtn { border: 0; background: none; color: var(--ink); font: 600 14px var(--f-body); cursor: pointer; padding: 0; text-decoration: underline; text-decoration-color: var(--line2); text-underline-offset: 3px; }
 
 .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
 .bars li { display: grid; grid-template-columns: 44px minmax(0, 1fr) 54px; gap: 8px; align-items: center; font-size: 13px; }
@@ -147,43 +114,16 @@ label.f { display: grid; gap: 4px; font-size: 13px; color: var(--ink2); }
 .cb { position: relative; width: 100%; height: 120px; }
 .cb i { position: absolute; left: 12%; right: 12%; bottom: 0; background: var(--bar); border-radius: 3px 3px 0 0; }
 .cb b { position: absolute; left: 0; right: 0; border-top: 2px dashed var(--ink); }
-.cb u { position: absolute; left: 0; right: 0; text-align: center; text-decoration: none; font-size: 11px; color: var(--ink2); }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted); margin-top: 10px; align-items: center; }
-.legend .dash { display: inline-block; width: 18px; border-top: 2px dashed var(--ink); margin-right: 5px; vertical-align: middle; }
-.legend .sw { display: inline-block; width: 18px; height: 8px; background: var(--bar); margin-right: 5px; vertical-align: middle; border-radius: 2px; }
 
 .hgrid { display: grid; grid-template-columns: 22px repeat(var(--cols), minmax(0, 1fr)); gap: 3px; max-width: 640px; }
 .hh { font-size: 11px; color: var(--muted); display: grid; place-items: center; min-height: 18px; }
 .hc { min-height: 38px; padding: 2px; display: grid; place-items: center; align-content: center; line-height: 1.15; border-radius: 4px; color: var(--cell-ink); text-align: center; background: var(--heat-lo); }
 .hc b { font: 600 clamp(10px, 2.6vw, 12px) var(--f-mono); }
 .hc span { font: 500 clamp(9px, 2.3vw, 11px) var(--f-mono); opacity: 0.9; }
-.hc[data-hi="1"] { color: var(--cell-ink-hi); }
 .hc.seq { background: color-mix(in oklab, var(--heat-hi) calc(var(--t) * 100%), var(--heat-lo)); }
 .hc.pos { background: color-mix(in oklab, var(--div-pos) calc(var(--a) * 100%), var(--div-mid)); }
 .hc.neg { background: color-mix(in oklab, var(--div-neg) calc(var(--a) * 100%), var(--div-mid)); }
-.hc.out { outline: 2px solid var(--accent); outline-offset: 1px; }
-.hgrid.wide .hc { min-height: 44px; }
-.hlegend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-top: 12px; flex-wrap: wrap; }
-.hlegend i { display: block; width: 140px; max-width: 40vw; height: 10px; border-radius: 3px; }
-.hlegend i.seq { background: linear-gradient(to right in oklab, var(--heat-lo), var(--heat-hi)); }
-.hlegend i.dv { background: linear-gradient(to right in oklab, var(--div-neg), var(--div-mid), var(--div-pos)); }
-
-.ctrl { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; align-items: end; }
-.prog { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
-.prog i { display: block; height: 100%; width: 0; background: var(--accent); }
-@media (prefers-reduced-motion: no-preference) { .prog i { transition: width 0.15s linear; } }
-.verdict { border-left: 3px solid var(--line2); padding: 2px 0 2px 12px; display: grid; gap: 4px; }
-.verdict.flag { border-left-color: var(--accent); }
-.howto { font-size: 13px; color: var(--ink2); display: grid; gap: 4px; }
 .empty { color: var(--muted); text-align: center; padding: 28px 16px; }
-.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px 24px; margin: 0; }
-.facts dt { font-size: 12px; color: var(--muted); }
-.facts dd { margin: 0; font-size: 15px; }
-.facts dd b { font: 600 20px var(--f-mono); }
-#tip { position: fixed; z-index: 60; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12.5px; line-height: 1.4; padding: 6px 9px; border-radius: 6px; max-width: 260px; }
-#tip[hidden] { display: none; }
-.msg { font-size: 13px; min-height: 1.4em; }
-.msg.err { color: var(--accent); }
 .foot { font-size: 12.5px; color: var(--muted); padding-block: 8px 0; }
 </style>
 
@@ -192,643 +132,85 @@ label.f { display: grid; gap: 4px; font-size: 13px; color: var(--ink2); }
     <div class="top-in">
       <div class="brand">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><path d="M3 9a3 3 0 0 1 3-3h22a3 3 0 0 1 3 3v3.2a3.8 3.8 0 0 0 0 7.6V23a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3.2a3.8 3.8 0 0 0 0-7.6V9Z" stroke="currentColor" stroke-width="2"/><path d="M22 7v18" stroke="currentColor" stroke-width="2" stroke-dasharray="2.5 3"/><path d="M8 13h8M8 17h6M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <div><h1>สมุดผลหวยลาว</h1><p id="srcline">กำลังโหลด…</p></div>
+        <div><h1>สมุดผลหวยลาว</h1><p id="srcline">กำลังโหลดข้อมูล...</p></div>
       </div>
-      <div class="seg" role="group" aria-label="รูปแบบปี"><button type="button" data-act="era" data-v="be" aria-pressed="true">พ.ศ.</button><button type="button" data-act="era" data-v="ce" aria-pressed="false">ค.ศ.</button></div>
+      <div class="seg" role="group"><button type="button" data-act="era" data-v="be" aria-pressed="true">พ.ศ.</button><button type="button" data-act="era" data-v="ce" aria-pressed="false">ค.ศ.</button></div>
     </div>
-    <nav class="tabs" role="tablist" aria-label="หน้าหลัก">
-      <button class="tab" role="tab" data-act="tab" data-v="home" id="t-home">ภาพรวม</button>
+    <nav class="tabs" role="tablist">
+      <button class="tab" role="tab" data-act="tab" data-v="home" id="t-home" aria-selected="true">ภาพรวม</button>
       <button class="tab" role="tab" data-act="tab" data-v="years" id="t-years">สถิติรายปี</button>
       <button class="tab" role="tab" data-act="tab" data-v="heat" id="t-heat">Heatmap</button>
-      <button class="tab" role="tab" data-act="tab" data-v="scan" id="t-scan">สแกน Monte Carlo</button>
-      <button class="tab" role="tab" data-act="tab" data-v="data" id="t-data">ข้อมูล</button>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
-  <div id="banner" class="banner" hidden></div>
-  <section id="v-home" class="view" role="tabpanel" aria-labelledby="t-home"></section>
-  <section id="v-years" class="view" role="tabpanel" aria-labelledby="t-years" hidden></section>
-  <section id="v-heat" class="view" role="tabpanel" aria-labelledby="t-heat" hidden></section>
-  <section id="v-scan" class="view" role="tabpanel" aria-labelledby="t-scan" hidden></section>
-  <section id="v-data" class="view" role="tabpanel" aria-labelledby="t-data" hidden></section>
-  <p class="foot">รูปแบบผลตามหวยลาวพัฒนา: เลข 6 หลัก รางวัลเลขท้าย 2, 3, 4, 5 และ 6 ตัว สถิติย้อนหลังใช้ดูข้อมูลเท่านั้น ไม่ใช่การทำนายผล</p>
+  <section id="v-home" class="view" role="tabpanel"></section>
+  <section id="v-years" class="view" role="tabpanel" hidden></section>
+  <section id="v-heat" class="view" role="tabpanel" hidden></section>
+  <p class="foot">แสดงผลจากข้อมูล data.json บน GitHub อัปเดตอัตโนมัติ</p>
 </main>
-<div id="tip" role="tooltip" hidden></div>
 
 <script>
 var TH_MONTHS = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
 var TH_DAYS = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+var S = { tab: 'home', era: 'be', real: {}, yearSel: 'all', yser: 2 };
+var DR = [];
 
 function pad(n, w) { return String(n).padStart(w, '0'); }
-function isoOf(y, m, d) { return y + '-' + pad(m, 2) + '-' + pad(d, 2); }
-function validDate(y, m, d) {
-  if (y < 1900 || y > 2200) return false;
-  var dt = new Date(y, m - 1, d);
-  return dt.getFullYear() === y && dt.getMonth() === m - 1 && dt.getDate() === d;
-}
-function weekdayOf(iso) {
-  var p = iso.split('-');
-  return new Date(+p[0], +p[1] - 1, +p[2]).getDay();
-}
-function mulberry32(a) {
-  return function () {
-    a |= 0; a = (a + 0x6D2B79F5) | 0;
-    var t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-function nowMs() { return typeof performance !== 'undefined' ? performance.now() : Date.now(); }
-
-function makeSample() {
-  var rng = mulberry32(20261022), out = {};
-  var dt = new Date(2022, 0, 3), end = new Date(2026, 9, 21);
-  while (dt <= end) {
-    var w = dt.getDay();
-    if (w >= 1 && w <= 5) {
-      var s = '';
-      for (var i = 0; i < 6; i++) s += Math.floor(rng() * 10);
-      out[isoOf(dt.getFullYear(), dt.getMonth() + 1, dt.getDate())] = s;
-    }
-    dt.setDate(dt.getDate() + 1);
-  }
-  return out;
-}
-
-function toDraws(map) {
-  return Object.keys(map).sort().map(function (d) {
-    var p = d.split('-');
-    return { d: d, n: map[d], y: +p[0], m: +p[1], w: weekdayOf(d) };
-  });
-}
-
-function parseLines(text) {
-  var items = [], bad = [];
-  text.split(/\r?\n/).forEach(function (ln, i) {
-    var s = ln.trim();
-    if (!s) return;
-    var y, m, d, rest, mm = s.match(/(\d{4})[-\/.](\d{1,2})[-\/.](\d{1,2})/);
-    if (mm) { y = +mm[1]; m = +mm[2]; d = +mm[3]; rest = s.replace(mm[0], ' '); }
-    else {
-      mm = s.match(/(\d{1,2})[-\/.](\d{1,2})[-\/.](\d{4})/);
-      if (mm) { d = +mm[1]; m = +mm[2]; y = +mm[3]; rest = s.replace(mm[0], ' '); }
-    }
-    if (!mm) { bad.push(i + 1); return; }
-    if (y > 2400) y -= 543;
-    if (!validDate(y, m, d)) { bad.push(i + 1); return; }
-    
-    // รองรับการนำเข้าผลที่มีช่องว่าง ขีดคั่น หรือคอมมา (เช่น 487-658 หรือ 487 658)
-    var cleanRest = rest.replace(/[-\s,]+/g, '');
-    var nm = cleanRest.match(/(\d{2,6})/);
-    if (!nm) { bad.push(i + 1); return; }
-    items.push({ d: isoOf(y, m, d), n: nm[1] });
-  });
-  return { items: items, bad: bad };
-}
-
-function lastN(s, n) { return s.length >= n ? s.slice(s.length - n) : null; }
-function seriesVals(draws, n) {
-  var out = [];
-  for (var i = 0; i < draws.length; i++) {
-    var s = lastN(draws[i].n, n);
-    if (s !== null) out.push(parseInt(s, 10));
-  }
-  return Int32Array.from(out);
-}
-function countVals(vals, K) {
-  var c = new Uint32Array(K);
-  for (var i = 0; i < vals.length; i++) c[vals[i]]++;
-  return c;
-}
-function gapsOf(vals, K) {
-  var last = new Int32Array(K).fill(-1), g = new Int32Array(K);
-  for (var i = 0; i < vals.length; i++) last[vals[i]] = i;
-  for (var k = 0; k < K; k++) g[k] = last[k] < 0 ? vals.length : vals.length - 1 - last[k];
-  return g;
-}
-function orderBy(metric, K, dir) {
-  var idx = new Int32Array(K);
-  for (var k = 0; k < K; k++) idx[k] = k;
-  idx.sort(function (a, b) { return dir === 'asc' ? (metric[a] - metric[b] || a - b) : (metric[b] - metric[a] || a - b); });
-  return idx;
-}
-
-function yearTable(draws) {
-  var ys = {}, order = [];
-  draws.forEach(function (r) { if (!ys[r.y]) { ys[r.y] = []; order.push(r.y); } ys[r.y].push(r); });
-  return order.sort().map(function (y) {
-    var sub = ys[y], vals = seriesVals(sub, 2), c = countVals(vals, 100), n = vals.length;
-    var top = 0, never = 0, ev = 0, hi = 0, dbl = 0, rep = 0;
-    for (var k = 0; k < 100; k++) { if (c[k] > c[top]) top = k; if (c[k] === 0) never++; }
-    for (var i = 0; i < n; i++) {
-      var v = vals[i];
-      if (v % 2 === 0) ev++;
-      if (v >= 50) hi++;
-      if (v % 11 === 0) dbl++;
-      if (i > 0 && vals[i - 1] === v) rep++;
-    }
-    return { y: y, draws: sub.length, n: n, top: top, topC: c[top], never: never,
-      evenPct: n ? ev / n : 0, highPct: n ? hi / n : 0, dblPct: n ? dbl / n : 0, rep: rep };
-  });
-}
-
-function upperP(sim, obs) {
-  var c = 0;
-  for (var i = 0; i < sim.length; i++) if (sim[i] >= obs) c++;
-  return (1 + c) / (1 + sim.length);
-}
-function meanOf(a) { var s = 0; for (var i = 0; i < a.length; i++) s += a[i]; return a.length ? s / a.length : 0; }
-
-async function mcScan(o, tick) {
-  var K = o.K, W = o.W, obs = o.obs, iters = o.iters, rng = mulberry32(o.seed);
-  if (!W) return null;
-  var exp = W / K, sd = Math.sqrt(exp * (1 - 1 / K));
-  var maxBin = Math.min(W, Math.ceil(exp + 10 * Math.sqrt(exp) + 12)), nb = maxBin + 1;
-  var hist = new Uint32Array(K * nb);
-  var chiSim = new Float64Array(iters), maxSim = new Uint16Array(iters), colSim = new Uint16Array(iters);
-  var counts = new Uint16Array(K), it, w, k, c, d, last = nowMs(), t;
-  var iters2 = Math.min(iters, 20000), total = iters + iters2;
-  for (it = 0; it < iters; it++) {
-    counts.fill(0);
-    for (w = 0; w < W; w++) counts[(rng() * K) | 0]++;
-    var chi = 0, mx = 0, col = 0;
-    for (k = 0; k < K; k++) {
-      c = counts[k]; hist[k * nb + (c > maxBin ? maxBin : c)]++;
-      d = c - exp; chi += d * d / exp;
-      if (c > mx) mx = c;
-      if (c > 1) col++;
-    }
-    chiSim[it] = chi; maxSim[it] = mx; colSim[it] = col;
-    if ((it & 255) === 255) { t = nowMs(); if (t - last > 40) { last = t; await tick((it + 1) / total); } }
-  }
-  var chiObs = 0, maxObs = 0, collObs = 0;
-  for (k = 0; k < K; k++) {
-    c = obs[k]; d = c - exp; chiObs += d * d / exp;
-    if (c > maxObs) maxObs = c;
-    if (c > 1) collObs++;
-  }
-  var lo = new Uint16Array(K), hi = new Uint16Array(K), cum, b;
-  for (k = 0; k < K; k++) {
-    cum = 0; var l = -1, h = -1;
-    for (b = 0; b <= maxBin; b++) {
-      cum += hist[k * nb + b];
-      if (l < 0 && cum >= 0.025 * iters) l = b;
-      if (h < 0 && cum >= 0.975 * iters) { h = b; break; }
-    }
-    lo[k] = l < 0 ? 0 : l; hi[k] = h < 0 ? maxBin : h;
-  }
-  var outObs = 0, z = new Float64Array(K), outCells = [];
-  for (k = 0; k < K; k++) {
-    z[k] = (obs[k] - exp) / sd;
-    if (obs[k] < lo[k] || obs[k] > hi[k]) { outObs++; outCells.push(k); }
-  }
-  var outSim = new Uint16Array(iters2);
-  for (it = 0; it < iters2; it++) {
-    counts.fill(0);
-    for (w = 0; w < W; w++) counts[(rng() * K) | 0]++;
-    var oc = 0;
-    for (k = 0; k < K; k++) { c = counts[k]; if (c < lo[k] || c > hi[k]) oc++; }
-    outSim[it] = oc;
-    if ((it & 255) === 255) { t = nowMs(); if (t - last > 40) { last = t; await tick((iters + it + 1) / total); } }
-  }
-  return {
-    exp: exp, sd: sd, lo: lo, hi: hi, z: z, outCells: outCells,
-    chiObs: chiObs, chiMean: meanOf(chiSim), pChi: upperP(chiSim, chiObs),
-    maxObs: maxObs, maxMean: meanOf(maxSim), pMax: upperP(maxSim, maxObs),
-    collObs: collObs, collMean: meanOf(colSim), pColl: upperP(colSim, collObs),
-    outObs: outObs, outMean: meanOf(outSim), pOut: upperP(outSim, outObs)
-  };
-}
-
-async function bootCore(vals, K, T, iters, rng, tick, base, span) {
-  var W = vals.length, obs = countVals(vals, K), exp = W / K;
-  var maxBin = Math.min(W, Math.ceil(exp + 10 * Math.sqrt(exp) + 12)), nb = maxBin + 1;
-  var hist = new Uint32Array(K * nb), inTop = new Uint32Array(K);
-  var counts = new Uint16Array(K), idx = new Int32Array(K), it, w, k, last = nowMs(), t;
-  var cmp = function (a, b) { return counts[b] - counts[a] || a - b; };
-  for (it = 0; it < iters; it++) {
-    counts.fill(0);
-    for (w = 0; w < W; w++) counts[vals[(rng() * W) | 0]]++;
-    for (k = 0; k < K; k++) { idx[k] = k; var c = counts[k]; hist[k * nb + (c > maxBin ? maxBin : c)]++; }
-    idx.sort(cmp);
-    for (k = 0; k < T; k++) inTop[idx[k]]++;
-    if ((it & 63) === 63) { t = nowMs(); if (t - last > 40) { last = t; await tick(base + span * (it + 1) / iters); } }
-  }
-  var order = orderBy(obs, K, 'desc'), rows = [], sum = 0;
-  for (var r = 0; r < T; r++) {
-    k = order[r];
-    var cum = 0, l = -1, h = -1;
-    for (var b = 0; b <= maxBin; b++) {
-      cum += hist[k * nb + b];
-      if (l < 0 && cum >= 0.025 * iters) l = b;
-      if (h < 0 && cum >= 0.975 * iters) { h = b; break; }
-    }
-    if (l < 0) l = 0; if (h < 0) h = maxBin;
-    var stab = inTop[k] / iters; sum += stab;
-    rows.push({ k: k, c: obs[k], share: obs[k] / W, loS: l / W, hiS: h / W, stab: stab });
-  }
-  return { rows: rows, meanStab: sum / T };
-}
-async function mcBoot(o, tick) {
-  var K = o.K, vals = o.vals, W = vals.length, T = Math.min(o.T, K);
-  if (!W) return null;
-  var iters = Math.min(o.iters, K > 100 ? 4000 : 20000);
-  var rng = mulberry32(o.seed);
-  var real = await bootCore(vals, K, T, iters, rng, tick, 0, 0.7);
-  var ctrlVals = new Int32Array(W);
-  for (var i = 0; i < W; i++) ctrlVals[i] = (rng() * K) | 0;
-  var ctrlIters = Math.max(500, Math.floor(iters / 2));
-  var ctrl = await bootCore(ctrlVals, K, T, ctrlIters, rng, tick, 0.7, 0.3);
-  return { rows: real.rows, meanStab: real.meanStab, ctrlMeanStab: ctrl.meanStab, W: W, K: K, T: T, iters: iters, ctrlIters: ctrlIters };
-}
-
-async function backtest(o, tick) {
-  var vals = o.vals, K = o.K, T = Math.min(o.T, K), L = o.L, N = vals.length - L;
-  if (N <= 0) return null;
-  var rng = mulberry32(o.seed), i, k, t, last = nowMs();
-  var counts = new Int32Array(K), lastSeen = new Int32Array(K).fill(-1);
-  var idx = new Int32Array(K), pool = new Int32Array(K);
-  var hits = { hot: 0, cold: 0, overdue: 0, random: 0 };
-  for (i = 0; i < L; i++) { counts[vals[i]]++; lastSeen[vals[i]] = i; }
-  var gap = new Float64Array(K);
-  var tie = new Float64Array(K);
-  var byCount = function (a, b) { return counts[b] - counts[a] || tie[a] - tie[b]; };
-  var byGap = function (a, b) { return gap[b] - gap[a] || tie[a] - tie[b]; };
-  for (k = 0; k < K; k++) pool[k] = k;
-  for (t = L; t < vals.length; t++) {
-    var actual = vals[t];
-    for (k = 0; k < K; k++) { idx[k] = k; tie[k] = rng(); }
-    idx.sort(byCount);
-    for (k = 0; k < T; k++) { if (idx[k] === actual) { hits.hot++; break; } }
-    for (k = 0; k < T; k++) { if (idx[K - 1 - k] === actual) { hits.cold++; break; } }
-    for (k = 0; k < K; k++) { idx[k] = k; gap[k] = lastSeen[k] < 0 ? 1e9 : (t - 1 - lastSeen[k]); }
-    idx.sort(byGap);
-    for (k = 0; k < T; k++) { if (idx[k] === actual) { hits.overdue++; break; } }
-    for (k = 0; k < T; k++) {
-      var j = k + ((rng() * (K - k)) | 0), tmp = pool[k]; pool[k] = pool[j]; pool[j] = tmp;
-      if (pool[k] === actual) { hits.random++; }
-    }
-    counts[vals[t]]++; counts[vals[t - L]]--; lastSeen[vals[t]] = t;
-    if (((t - L) & 31) === 31) { var tn = nowMs(); if (tn - last > 40) { last = tn; await tick(0.8 * (t - L + 1) / N); } }
-  }
-  var p = T / K, iters2 = Math.min(o.iters, 5000), sims = new Uint16Array(iters2), it, h;
-  for (it = 0; it < iters2; it++) {
-    h = 0;
-    for (i = 0; i < N; i++) if (rng() < p) h++;
-    sims[it] = h;
-    if ((it & 63) === 63) { var t2 = nowMs(); if (t2 - last > 40) { last = t2; await tick(0.8 + 0.2 * (it + 1) / iters2); } }
-  }
-  var sorted = Array.prototype.slice.call(sims).sort(function (a, b) { return a - b; });
-  var band = { lo: sorted[Math.floor(0.025 * iters2)], hi: sorted[Math.min(iters2 - 1, Math.floor(0.975 * iters2))], mean: meanOf(sims) };
-  var res = ['hot', 'cold', 'overdue', 'random'].map(function (id) {
-    return { id: id, hits: hits[id], rate: hits[id] / N, p: upperP(sims, hits[id]), pLow: (1 + sims.filter(function (s) { return s <= hits[id]; }).length) / (1 + iters2) };
-  });
-  return { N: N, T: T, K: K, L: L, p: p, band: band, res: res, iters2: iters2 };
-}
-</script>
-<script>
-(function () {
-'use strict';
-var $ = function (s, r) { return (r || document).querySelector(s); };
-var LS = 'lao-ledger-v1';
-var S = { tab: 'home', era: 'be', real: {}, sample: makeSample(), yearSel: 'all', yser: 2, track: null,
-  heatYear: 'all', heatMetric: 'freq', sync: 'local', db: null, pending: 0, migrated: false, delArm: false,
-  scan: { mode: 1, n: 2, win: 0, iters: 10000, seed: 2026, T: 10, L: 60, ran: false, busy: false, out: null } };
-var DR = [], YEARS = [];
-
-function isSample() { return Object.keys(S.real).length === 0; }
-function eraYear(y) { return S.era === 'be' ? y + 543 : y; }
 function fmtNum(n) { return Number(n).toLocaleString('en-US'); }
-function fmtDate(iso) {
-  var p = iso.split('-');
-  return TH_DAYS[weekdayOf(iso)] + ' ' + (+p[2]) + ' ' + TH_MONTHS[+p[1] - 1] + ' ' + eraYear(+p[0]);
-}
-function fmtP(p) { return p < 0.001 ? '< 0.001' : p.toFixed(3); }
-function pct(x, d) { return (x * 100).toFixed(d == null ? 1 : d) + '%'; }
-function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
-function isDark() {
-  var t = document.documentElement.getAttribute('data-theme');
-  return t === 'dark' || (t !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-}
-function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+function weekdayOf(iso) { var p = iso.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).getDay(); }
+function eraYear(y) { return S.era === 'be' ? y + 543 : y; }
+function fmtDate(iso) { var p = iso.split('-'); return TH_DAYS[weekdayOf(iso)] + ' ' + (+p[2]) + ' ' + TH_MONTHS[+p[1] - 1] + ' ' + eraYear(+p[0]); }
 function two(s) { return s.length >= 2 ? s.slice(0, -2) + '<span class="lastTwo">' + s.slice(-2) + '</span>' : s; }
-function bkkNow() { var d = new Date(); return new Date(d.getTime() + (d.getTimezoneOffset() + 420) * 60000); }
-function isoD(d) { return isoOf(d.getFullYear(), d.getMonth() + 1, d.getDate()); }
-function scopeDraws(y) { return y === 'all' ? DR : DR.filter(function (r) { return r.y === y; }); }
 
-function loadLocal() {
-  try { var raw = localStorage.getItem(LS); if (raw) { var o = JSON.parse(raw); if (o && typeof o === 'object') S.real = o; } } catch (e) {}
-}
-function saveLocal() { try { localStorage.setItem(LS, JSON.stringify(S.real)); } catch (e) {} }
-var chain = Promise.resolve();
-function persist(years) {
-  saveLocal();
-  if (!S.db) { S.sync = 'local'; renderHeader(); return; }
-  var uniq = years.filter(function (y, i) { return years.indexOf(y) === i; });
-  uniq.forEach(function (y) {
-    S.pending++;
-    chain = chain.then(function () {
-      var items = {};
-      Object.keys(S.real).forEach(function (d) { if (d.slice(0, 4) === String(y)) items[d] = S.real[d]; });
-      var ref = S.db.doc('draws/y' + y);
-      return Object.keys(items).length ? ref.set({ items: items }) : ref.delete();
-    }).then(function () { S.sync = 'db'; }, function () { S.sync = 'err'; }).then(function () { S.pending--; renderHeader(); });
-  });
-}
-async function initDb() {
+async function loadData() {
   try {
-    if (!window.claude || !window.claude.use) return;
-    var db = await window.claude.use('db');
-    if (!db) return;
-    S.db = db; S.sync = 'db';
-    db.collection('draws').onSnapshot(function (snap) {
-      if (S.pending > 0) return;
-      var m = {};
-      snap.docs.forEach(function (doc) { var it = (doc.data() || {}).items; if (it) Object.keys(it).forEach(function (k) { m[k] = it[k]; }); });
-      if (snap.empty) {
-        if (!S.migrated && Object.keys(S.real).length) {
-          S.migrated = true;
-          persist(Object.keys(S.real).map(function (d) { return +d.slice(0, 4); }));
-          return;
-        }
-        S.migrated = true;
-        if (Object.keys(S.real).length) { S.real = {}; saveLocal(); rebuild(); }
-      } else {
-        S.migrated = true; S.real = m; saveLocal(); rebuild();
-      }
-      S.sync = 'db'; renderHeader();
-    }, function () { S.sync = 'local'; renderHeader(); });
-  } catch (e) { S.sync = 'local'; }
+    var res = await fetch('data.json?t=' + Date.now());
+    if (!res.ok) throw new Error("File not found");
+    S.real = await res.json();
+    rebuild();
+  } catch(e) {
+    document.getElementById('srcline').textContent = 'ไม่สามารถโหลด data.json ได้ (ตรวจสอบว่าอัปโหลด data.json แล้วหรือยัง)';
+  }
 }
 
-var tip = null;
-function setupTip() {
-  tip = $('#tip');
-  document.addEventListener('pointerover', function (e) {
-    var t = e.target.closest ? e.target.closest('[data-tip]') : null;
-    if (!t) { tip.hidden = true; return; }
-    tip.textContent = t.getAttribute('data-tip'); tip.hidden = false; moveTip(e);
-  });
-  document.addEventListener('pointermove', function (e) { if (!tip.hidden) moveTip(e); });
-  document.addEventListener('pointerleave', function () { tip.hidden = true; });
-  window.addEventListener('scroll', function () { tip.hidden = true; }, { passive: true });
-}
-function moveTip(e) {
-  var w = tip.offsetWidth, h = tip.offsetHeight;
-  var x = clamp(e.clientX + 12, 8, window.innerWidth - w - 8), y = e.clientY + 16;
-  if (y + h > window.innerHeight - 8) y = e.clientY - h - 12;
-  tip.style.left = x + 'px'; tip.style.top = y + 'px';
-}
-
-function barRows(items, max, exp) {
-  return '<ol class="bars">' + items.map(function (it) {
-    return '<li data-tip="' + esc(it.tip) + '"><span class="mono">' + it.label + '</span><span class="bt"><i style="width:' + (max ? it.v / max * 100 : 0).toFixed(1) + '%"></i>' +
-      (exp != null ? '<b class="ex" style="left:' + (exp / max * 100).toFixed(1) + '%"></b>' : '') + '</span><span class="bv mono">' + it.vtxt + '</span></li>';
-  }).join('') + '</ol>';
-}
-function colChart(labels, values, exp, unit) {
-  var ex = Array.isArray(exp) ? exp : labels.map(function () { return exp; });
-  var max = Math.max.apply(null, values.concat(ex)) * 1.12 || 1;
-  return '<div class="cols">' + labels.map(function (l, i) {
-    return '<div class="col" data-tip="' + esc(l + ': ' + values[i] + ' ' + unit + ' (คาดหวัง ' + ex[i].toFixed(1) + ')') + '"><div class="cb"><i style="height:' + (values[i] / max * 100).toFixed(1) + '%"></i><b style="bottom:' + (ex[i] / max * 100).toFixed(1) + '%"></b></div><span class="mono">' + l + '</span></div>';
-  }).join('') + '</div>';
-}
-function hcell(top, sub, v, tip, mode, outline) {
-  var flip = isDark() ? 0.45 : 0.6, cls, style, hi;
-  if (mode === 'seq') { v = clamp(v, 0, 1); cls = 'seq'; style = '--t:' + v.toFixed(3); hi = v > flip; }
-  else { var a = clamp(v, -1, 1); cls = 'dv ' + (a >= 0 ? 'pos' : 'neg'); style = '--a:' + Math.abs(a).toFixed(3); hi = Math.abs(a) > flip; }
-  return '<div class="hc ' + cls + (outline ? ' out' : '') + '" data-hi="' + (hi ? 1 : 0) + '" style="' + style + '" data-tip="' + esc(tip) + '"><b>' + top + '</b><span>' + sub + '</span></div>';
-}
-function legendSeq(lo, hi) { return '<div class="hlegend"><span>' + lo + '</span><i class="seq"></i><span>' + hi + '</span></div>'; }
-function legendDiv() { return '<div class="hlegend"><span>ต่ำกว่าคาด</span><i class="dv"></i><span>สูงกว่าคาด</span><span>(สีเต็มที่ z = ±3)</span></div>'; }
-
-function renderHeader() {
-  var n = DR.length, t;
-  if (isSample()) t = 'ข้อมูลตัวอย่างจำลอง · ' + fmtNum(n) + ' งวด';
-  else t = 'ข้อมูลของคุณ · ' + fmtNum(n) + ' งวด · ' + (S.sync === 'db' ? 'บันทึกในบัญชีแล้ว' : S.sync === 'err' ? 'บันทึกในบัญชีไม่สำเร็จ ใช้เครื่องนี้แทน' : 'บันทึกในเครื่องนี้');
-  $('#srcline').textContent = t;
-  document.querySelectorAll('[data-act="era"]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-v') === S.era ? 'true' : 'false'); });
-  var bn = $('#banner');
-  if (isSample() && n) {
-    bn.hidden = false;
-    bn.innerHTML = '<span>ตอนนี้แสดงข้อมูลตัวอย่างที่สร้างขึ้นเพื่อสาธิต ไม่ใช่ผลรางวัลจริง วางผลจริงของคุณเพื่อใช้แทนได้ทันที</span><button type="button" class="btn small" data-act="tab" data-v="data">เพิ่มผลจริง</button>';
-  } else bn.hidden = true;
-}
 function rebuild() {
-  DR = toDraws(isSample() ? S.sample : S.real);
-  YEARS = DR.map(function (r) { return r.y; }).filter(function (y, i, a) { return a.indexOf(y) === i; });
-  if (S.yearSel !== 'all' && YEARS.indexOf(S.yearSel) < 0) S.yearSel = 'all';
-  if (S.heatYear !== 'all' && YEARS.indexOf(S.heatYear) < 0) S.heatYear = 'all';
-  S.scan.out = null; S.scan.ran = false; S.track = null;
-  renderHeader(); renderView(S.tab);
-}
-function setTab(t) {
-  S.tab = t;
-  ['home', 'years', 'heat', 'scan', 'data'].forEach(function (k) {
-    $('#v-' + k).hidden = k !== t;
-    $('#t-' + k).setAttribute('aria-selected', k === t ? 'true' : 'false');
+  DR = Object.keys(S.real).sort().map(function(d) {
+    var p = d.split('-');
+    return { d: d, n: S.real[d], y: +p[0], m: +p[1], w: weekdayOf(d) };
   });
-  try { history.replaceState(null, '', '#' + t); } catch (e) {}
-  renderView(t);
-}
-function renderView(t) {
-  ({ home: renderHome, years: renderYears, heat: renderHeat, scan: renderScan, data: renderData })[t]();
+  document.getElementById('srcline').textContent = 'โหลดสำเร็จแล้ว · ทั้งหมด ' + fmtNum(DR.length) + ' งวด';
+  renderHome();
 }
 
-function nextDraw(lastIso) {
-  var now = bkkNow(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate()), c = new Date(today);
-  if (now.getHours() >= 21) c.setDate(c.getDate() + 1);
-  while (c.getDay() === 0 || c.getDay() === 6 || isoD(c) <= lastIso) c.setDate(c.getDate() + 1);
-  var diff = Math.round((c - today) / 86400000);
-  var when = diff === 0 ? 'วันนี้' : diff === 1 ? 'พรุ่งนี้' : TH_DAYS[c.getDay()] + ' ' + c.getDate() + ' ' + TH_MONTHS[c.getMonth()];
-  return when;
-}
 function renderHome() {
-  var el = $('#v-home');
-  if (!DR.length) { el.innerHTML = '<div class="card empty">ยังไม่มีผลรางวัล เพิ่มได้ที่แท็บ ข้อมูล</div>'; return; }
+  var el = document.getElementById('v-home');
+  if (!DR.length) { el.innerHTML = '<div class="card empty">ไม่มีข้อมูลใน data.json</div>'; return; }
   var r = DR[DR.length - 1], s = r.n, len = s.length;
   var digs = s.split('').map(function (c, i) { return '<div class="dg' + (i >= len - 2 ? ' hit' : '') + '">' + c + '</div>'; }).join('');
-  var brk = [2, 3, 4, 5].filter(function (n) { return n < len + 1 && n <= len; }).map(function (n, i) {
-    return '<div class="brk' + (n === 2 ? ' b2' : '') + '" style="grid-column:' + (len - n + 1) + ' / ' + (len + 1) + ';grid-row:' + (i + 1) + '"><span>ท้าย ' + n + '</span><b class="mono">' + s.slice(len - n) + '</b></div>';
-  }).join('');
-  var vals = seriesVals(DR, 2), cnt = countVals(vals, 100), gaps = gapsOf(vals, 100);
-  var top = orderBy(cnt, 100, 'desc')[0], od = orderBy(gaps, 100, 'desc')[0], rep = 0;
-  for (var i = 1; i < vals.length; i++) if (vals[i] === vals[i - 1]) rep++;
   var recent = DR.slice(-12).reverse().map(function (x) {
     return '<tr><td>' + fmtDate(x.d) + '</td><td class="num">' + two(x.n) + '</td><td class="num">' + (x.n.length >= 4 ? x.n.slice(-4) : '-') + '</td><td class="num">' + (x.n.length >= 3 ? x.n.slice(-3) : '-') + '</td><td class="num lastTwo">' + x.n.slice(-2) + '</td></tr>';
   }).join('');
+  
   el.innerHTML =
-    '<div class="ticket" style="--n:' + len + '"><div class="stub"><div><div class="lbl">งวดล่าสุด</div></div><div><div class="dt">' + fmtDate(r.d).replace(/^\S+\s/, '') + '</div><div class="wd">วัน' + ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'][r.w] + '</div></div></div>' +
-    '<div class="tbody"><div class="lbl">ผลรางวัล</div><div class="digits" aria-label="ผลรางวัล ' + s.split('').join(' ') + '">' + digs + '</div><div class="brks" style="--n:' + len + '">' + brk + '</div>' +
-    '<p class="nextline">งวดถัดไป: <b>' + nextDraw(r.d) + '</b> ช่วงค่ำตามเวลาไทย (ปกติจันทร์–ศุกร์ ตรวจวันออกรางวัลจริงจากแหล่งทางการ)</p></div></div>' +
-    '<div class="card"><h2>ภาพรวมเลขท้าย 2 ตัว</h2><p class="sub">นับจากทุกงวดในข้อมูล (' + fmtNum(vals.length) + ' งวด) ค่าคาดหวังต่อเลข = ' + (vals.length / 100).toFixed(1) + ' ครั้ง</p>' +
-    '<dl class="facts"><div><dt>ออกบ่อยที่สุด</dt><dd><b>' + pad(top, 2) + '</b> ออก ' + cnt[top] + ' ครั้ง</dd></div>' +
-    '<div><dt>ค้างนานที่สุด</dt><dd><b>' + pad(od, 2) + '</b> ' + (gaps[od] >= vals.length ? 'ยังไม่เคยออกในข้อมูล' : 'ผ่านมา ' + gaps[od] + ' งวด') + '</dd></div>' +
-    '<div><dt>ออกซ้ำกับงวดก่อนหน้า</dt><dd><b>' + rep + '</b> ครั้ง (' + pct(rep / Math.max(1, vals.length - 1)) + ' · ถ้าสุ่ม 1.0%)</dd></div></dl></div>' +
+    '<div class="ticket" style="--n:' + len + '"><div class="stub"><div><div class="lbl">งวดล่าสุด</div></div><div><div class="dt">' + fmtDate(r.d).replace(/^\S+\s/, '') + '</div></div></div>' +
+    '<div class="tbody"><div class="lbl">ผลรางวัล</div><div class="digits">' + digs + '</div></div></div>' +
     '<div class="card"><h2>ผล 12 งวดล่าสุด</h2><div class="tw"><table class="tbl"><thead><tr><th>วันที่</th><th>ผล 6 หลัก</th><th>ท้าย 4</th><th>ท้าย 3</th><th>ท้าย 2</th></tr></thead><tbody>' + recent + '</tbody></table></div></div>';
 }
 
-function renderYears() {
-  var el = $('#v-years');
-  if (!DR.length) { el.innerHTML = '<div class="card empty">ยังไม่มีข้อมูล</div>'; return; }
-  var n = S.yser, K = Math.pow(10, n), sub = scopeDraws(S.yearSel);
-  var vals = seriesVals(sub, n), cnt = countVals(vals, K), W = vals.length, expv = W / K;
-  var chips = '<div class="chips" role="group" aria-label="เลือกปี"><button type="button" class="chip" data-act="ysel" data-v="all" aria-pressed="' + (S.yearSel === 'all') + '">ทุกปี</button>' +
-    YEARS.map(function (y) { return '<button type="button" class="chip" data-act="ysel" data-v="' + y + '" aria-pressed="' + (S.yearSel === y) + '">' + eraYear(y) + '</button>'; }).join('') + '</div>';
-  var sers = '<div class="seg" role="group" aria-label="ชุดเลข"><button type="button" data-act="yser" data-v="2" aria-pressed="' + (n === 2) + '">ท้าย 2 ตัว</button><button type="button" data-act="yser" data-v="3" aria-pressed="' + (n === 3) + '">ท้าย 3 ตัว</button></div>';
-  var rows = yearTable(DR).map(function (r) {
-    return '<tr class="' + (S.yearSel === r.y ? 'sel' : '') + '"><td><button type="button" class="ybtn" data-act="ysel" data-v="' + r.y + '">' + eraYear(r.y) + '</button></td><td>' + r.draws + '</td><td class="num">' + pad(r.top, 2) + ' <span class="muted">×' + r.topC + '</span></td><td>' + r.never + '</td><td>' + pct(r.evenPct, 0) + '</td><td>' + pct(r.highPct, 0) + '</td><td>' + pct(r.dblPct, 0) + '</td><td>' + r.rep + '</td></tr>';
-  }).join('');
-  var order = orderBy(cnt, K, 'desc'), topItems = [], maxC = 0, i, k;
-  for (i = 0; i < 10; i++) { k = order[i]; maxC = Math.max(maxC, cnt[k]); }
-  maxC = Math.max(maxC, expv) * 1.1;
-  for (i = 0; i < 10; i++) { k = order[i]; topItems.push({ label: pad(k, n), v: cnt[k], vtxt: cnt[k] + ' ครั้ง', tip: 'เลข ' + pad(k, n) + ' ออก ' + cnt[k] + ' ครั้ง (คาดหวัง ' + expv.toFixed(1) + ')' }); }
-  var gaps = gapsOf(vals, K), gOrder = orderBy(gaps, K, 'desc'), gItems = [], maxG = gaps[gOrder[0]] || 1;
-  for (i = 0; i < 10; i++) { k = gOrder[i]; gItems.push({ label: pad(k, n), v: gaps[k], vtxt: gaps[k] >= W ? 'ไม่เคย' : gaps[k] + ' งวด', tip: 'เลข ' + pad(k, n) + ' ' + (gaps[k] >= W ? 'ไม่เคยออกในช่วงนี้' : 'ไม่ออกมา ' + gaps[k] + ' งวด') }); }
-  var v2 = seriesVals(sub, 2), tens = new Array(10).fill(0), units = new Array(10).fill(0);
-  for (i = 0; i < v2.length; i++) { tens[Math.floor(v2[i] / 10)]++; units[v2[i] % 10]++; }
-  var dl = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  var all2 = seriesVals(DR, 2), c2 = countVals(all2, 100);
-  if (S.track == null) S.track = orderBy(c2, 100, 'desc')[0];
-  var trYears = YEARS.map(function (y) { var vv = seriesVals(DR.filter(function (r) { return r.y === y; }), 2), c = 0; for (var j = 0; j < vv.length; j++) if (vv[j] === S.track) c++; return { y: y, c: c, e: vv.length / 100 }; });
-  var scopeName = S.yearSel === 'all' ? 'ทุกปี' : 'ปี ' + eraYear(S.yearSel);
-  el.innerHTML =
-    '<div class="bar-row">' + chips + sers + '</div>' +
-    '<div class="card"><h2>สรุปรายปี (เลขท้าย 2 ตัว)</h2><p class="sub">ค่าที่ถ้าสุ่มจริงควรได้: เลขคู่ 50% · เลข 50–99 50% · เลขเบิ้ล (00, 11, … 99) 10% · ซ้ำงวดก่อน ≈ 1% ของงวด</p>' +
-    '<div class="tw"><table class="tbl"><thead><tr><th>ปี</th><th>งวด</th><th>ออกบ่อยสุด</th><th>เลขที่ไม่เคยออก</th><th>เลขคู่</th><th>50–99</th><th>เบิ้ล</th><th>ซ้ำงวดก่อน</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
-    '<div class="grid2"><div class="card"><h3>ออกบ่อยสุด 10 อันดับ · ' + scopeName + '</h3><p class="sub">ท้าย ' + n + ' ตัว จาก ' + fmtNum(W) + ' งวด</p>' + barRows(topItems, maxC, expv) +
-    '<div class="legend"><span><i class="sw"></i>จำนวนครั้งที่ออก</span><span><i class="dash"></i>ค่าคาดหวังถ้าสุ่ม ' + expv.toFixed(1) + '</span></div></div>' +
-    '<div class="card"><h3>ค้างนานสุด 10 อันดับ · ' + scopeName + '</h3><p class="sub">นับถึงงวดสุดท้ายของช่วงที่เลือก</p>' + barRows(gItems, maxG, null) + '</div></div>' +
-    '<div class="grid2"><div class="card"><h3>หลักสิบ · ' + scopeName + '</h3><p class="sub">เลขท้าย 2 ตัว หลักสิบของแต่ละเลข</p>' + colChart(dl, tens, v2.length / 10, 'ครั้ง') + '<div class="legend"><span><i class="dash"></i>ค่าคาดหวัง ' + (v2.length / 10).toFixed(1) + ' ครั้ง</span></div></div>' +
-    '<div class="card"><h3>หลักหน่วย · ' + scopeName + '</h3><p class="sub">เลขท้าย 2 ตัว หลักหน่วยของแต่ละเลข</p>' + colChart(dl, units, v2.length / 10, 'ครั้ง') + '<div class="legend"><span><i class="dash"></i>ค่าคาดหวัง ' + (v2.length / 10).toFixed(1) + ' ครั้ง</span></div></div></div>' +
-    '<div class="card"><h3>ติดตามเลขรายปี</h3><p class="sub">ดูว่าเลขท้าย 2 ตัวที่สนใจออกปีละกี่ครั้ง</p>' +
-    '<div class="row" style="margin-bottom:12px"><label class="f" for="trackIn">เลข (00–99)<input id="trackIn" inputmode="numeric" maxlength="2" value="' + pad(S.track, 2) + '" style="width:90px"></label></div>' +
-    colChart(trYears.map(function (t) { return String(eraYear(t.y)); }), trYears.map(function (t) { return t.c; }), trYears.map(function (t) { return t.e; }), 'ครั้ง') +
-    '<div class="legend"><span><i class="sw"></i>เลข ' + pad(S.track, 2) + ' ออกกี่ครั้งในปีนั้น</span><span><i class="dash"></i>ค่าคาดหวังของปีนั้น (งวด ÷ 100)</span></div></div>';
-}
+document.addEventListener('click', function(e) {
+  var b = e.target.closest('[data-act]'); if(!b) return;
+  var a = b.getAttribute('data-act'), v = b.getAttribute('data-v');
+  if (a === 'tab') {
+    S.tab = v;
+    ['home', 'years', 'heat'].forEach(function(k) {
+      document.getElementById('v-' + k).hidden = (k !== v);
+      document.getElementById('t-' + k).setAttribute('aria-selected', (k === v));
+    });
+  } else if (a === 'era') { S.era = v; rebuild(); }
+});
 
-function renderHeat() {
-  var el = $('#v-heat');
-  if (!DR.length) { el.innerHTML = '<div class="card empty">ยังไม่มีข้อมูล</div>'; return; }
-  var sub = scopeDraws(S.heatYear), vals = seriesVals(sub, 2), W = vals.length, cnt = countVals(vals, 100), e = W / 100, sd = Math.sqrt(e * 0.99);
-  var gaps = gapsOf(vals, 100), maxG = 1, maxC = 1, k, r, c;
-  for (k = 0; k < 100; k++) { if (gaps[k] > maxG) maxG = gaps[k]; if (cnt[k] > maxC) maxC = cnt[k]; }
-  var m = S.heatMetric, html = '<div class="hgrid" style="--cols:10" role="img" aria-label="Heatmap เลขท้าย 2 ตัว"><div class="hh"></div>';
-  for (c = 0; c < 10; c++) html += '<div class="hh">' + c + '</div>';
-  for (r = 0; r < 10; r++) {
-    html += '<div class="hh">' + r + '</div>';
-    for (c = 0; c < 10; c++) {
-      k = r * 10 + c;
-      if (m === 'freq') html += hcell(pad(k, 2), cnt[k], cnt[k] / maxC, 'เลข ' + pad(k, 2) + ' ออก ' + cnt[k] + ' ครั้ง (คาดหวัง ' + e.toFixed(1) + ')', 'seq');
-      else if (m === 'gap') html += hcell(pad(k, 2), gaps[k] >= W ? '∞' : gaps[k], gaps[k] / maxG, 'เลข ' + pad(k, 2) + (gaps[k] >= W ? ' ไม่เคยออกในช่วงนี้' : ' ไม่ออกมา ' + gaps[k] + ' งวด'), 'seq');
-      else { var z = (cnt[k] - e) / sd; html += hcell(pad(k, 2), (z >= 0 ? '+' : '') + z.toFixed(1), z / 3, 'เลข ' + pad(k, 2) + ' ออก ' + cnt[k] + ' ครั้ง · z = ' + z.toFixed(2), 'dv'); }
-    }
-  }
-  html += '</div>';
-  var leg = m === 'freq' ? legendSeq('0 ครั้ง', maxC + ' ครั้ง') : m === 'gap' ? legendSeq('เพิ่งออก', maxG + ' งวด') : legendDiv();
-  var six = sub.filter(function (x) { return x.n.length === 6; }), pos = [];
-  for (r = 0; r < 6; r++) pos.push(new Array(10).fill(0));
-  six.forEach(function (x) { for (var i = 0; i < 6; i++) pos[i][+x.n[i]]++; });
-  var pe = six.length / 10, psd = Math.sqrt(six.length * 0.09), ph = '<div class="hgrid wide" style="--cols:10"><div class="hh"></div>';
-  for (c = 0; c < 10; c++) ph += '<div class="hh">' + c + '</div>';
-  var posNames = ['หลักที่ 1', 'หลักที่ 2', 'หลักที่ 3', 'หลักที่ 4', 'หลักที่ 5', 'หลักที่ 6'];
-  for (r = 0; r < 6; r++) {
-    ph += '<div class="hh" style="font-size:10px">' + (r + 1) + '</div>';
-    for (c = 0; c < 10; c++) { var zz = (pos[r][c] - pe) / psd; ph += hcell(c, pos[r][c], zz / 3, posNames[r] + ' · เลข ' + c + ' ออก ' + pos[r][c] + ' ครั้ง (คาดหวัง ' + pe.toFixed(1) + ') · z = ' + zz.toFixed(2), 'dv'); }
-  }
-  ph += '</div>';
-  var wds = [1, 2, 3, 4, 5, 6, 0].filter(function (w) { return sub.some(function (x) { return x.w === w; }); });
-  var wh = '<div class="hgrid wide" style="--cols:10"><div class="hh"></div>';
-  for (c = 0; c < 10; c++) wh += '<div class="hh">' + c + '</div>';
-  wds.forEach(function (w) {
-    var rowD = sub.filter(function (x) { return x.w === w; }), arr = new Array(10).fill(0);
-    rowD.forEach(function (x) { arr[+x.n.slice(-1)]++; });
-    var ee = rowD.length / 10, ssd = Math.sqrt(rowD.length * 0.09) || 1;
-    wh += '<div class="hh" style="font-size:10px">' + TH_DAYS[w].replace('.', '') + '</div>';
-    for (c = 0; c < 10; c++) { var z2 = (arr[c] - ee) / ssd; wh += hcell(c, arr[c], z2 / 3, 'วัน' + TH_DAYS[w] + ' · เลขหน่วย ' + c + ' ออก ' + arr[c] + ' ครั้ง (คาดหวัง ' + ee.toFixed(1) + ') · z = ' + z2.toFixed(2), 'dv'); }
-  });
-  wh += '</div>';
-  var chips = '<div class="chips" role="group" aria-label="เลือกปี"><button type="button" class="chip" data-act="hyear" data-v="all" aria-pressed="' + (S.heatYear === 'all') + '">ทุกปี</button>' +
-    YEARS.map(function (y) { return '<button type="button" class="chip" data-act="hyear" data-v="' + y + '" aria-pressed="' + (S.heatYear === y) + '">' + eraYear(y) + '</button>'; }).join('') + '</div>';
-  var met = '<div class="seg" role="group" aria-label="ตัวชี้วัด"><button type="button" data-act="hmet" data-v="freq" aria-pressed="' + (m === 'freq') + '">ความถี่</button><button type="button" data-act="hmet" data-v="gap" aria-pressed="' + (m === 'gap') + '">ค้างนาน</button><button type="button" data-act="hmet" data-v="dev" aria-pressed="' + (m === 'dev') + '">เบี่ยงจากค่าคาด</button></div>';
-  el.innerHTML = '<div class="bar-row">' + chips + met + '</div>' +
-    '<div class="card"><h2>เลขท้าย 2 ตัว 00–99</h2><p class="sub">' + (S.heatYear === 'all' ? 'ทุกปี' : 'ปี ' + eraYear(S.heatYear)) + ' · ' + fmtNum(W) + ' งวด · แถว = หลักสิบ คอลัมน์ = หลักหน่วย</p>' + html + leg + '</div>' +
-    '<div class="grid2"><div class="card"><h3>เลขแต่ละหลักของผล 6 หลัก</h3><p class="sub">แถว = ตำแหน่งจากซ้าย (หลักที่ 6 คือหลักหน่วย) · ' + fmtNum(six.length) + ' งวดที่มีครบ 6 หลัก · สีเทียบกับ 10%</p>' + ph + legendDiv() + '</div>' +
-    '<div class="card"><h3>วันออกรางวัล × เลขหลักหน่วย</h3><p class="sub">ดูว่าเลขหลักหน่วยของแต่ละวันเอนเอียงจากค่าคาดหวังหรือไม่</p>' + wh + legendDiv() + '</div></div>';
-}
-
-function renderScan() {
-  var sc = S.scan, el = $('#v-scan');
-  if (!DR.length) { el.innerHTML = '<div class="card empty">ยังไม่มีข้อมูล</div>'; return; }
-  var modes = [[1, 'ตรวจความผิดปกติ'], [2, 'จัดอันดับ + ความเสถียร'], [3, 'ทดสอบกลยุทธ์ย้อนหลัง']];
-  var desc = { 1: 'จำลองการออกรางวัลแบบสุ่มสม่ำเสมอซ้ำหลายพันรอบ แล้วดูว่าข้อมูลจริงเบี่ยงจากการสุ่มเกินช่วง 95% หรือไม่',
-    2: 'สุ่มสลับงวดซ้ำ (bootstrap) เพื่อดูว่าเลขที่ติดอันดับบนยังติดอันดับเดิมได้แค่ไหน เทียบกับชุดควบคุมที่สุ่มล้วน',
-    3: 'เดินย้อนทีละงวด เลือกเลขตามกลยุทธ์จากงวดก่อนหน้า แล้วนับว่าถูกกี่ครั้ง เทียบกับช่วงที่การสุ่มล้วนทำได้' };
-  el.innerHTML =
-    '<div class="card"><h2>สแกนด้วย Monte Carlo</h2><p class="sub">ใช้การจำลองสุ่มเป็นไม้บรรทัดวัดว่ารูปแบบที่เห็นในสถิติ ต่างจากความบังเอิญมากแค่ไหน แต่ละงวดเป็นเหตุการณ์อิสระ ผลสแกนไม่ได้เพิ่มโอกาสถูกรางวัล</p>' +
-    '<div class="chips" role="group" aria-label="โหมดสแกน">' + modes.map(function (m) { return '<button type="button" class="chip" data-act="smode" data-v="' + m[0] + '" aria-pressed="' + (sc.mode === m[0]) + '">' + m[0] + ' · ' + m[1] + '</button>'; }).join('') + '</div>' +
-    '<p class="howto" style="margin:10px 0 14px">' + desc[sc.mode] + '</p>' +
-    '<div class="ctrl">' +
-    '<label class="f" for="scN">ชุดเลข<select id="scN"><option value="2"' + (sc.n === 2 ? ' selected' : '') + '>เลขท้าย 2 ตัว (100 เลข)</option><option value="3"' + (sc.n === 3 ? ' selected' : '') + '>เลขท้าย 3 ตัว (1,000 เลข)</option></select></label>' +
-    '<label class="f" for="scWin">ช่วงข้อมูล<select id="scWin">' + [[0, 'ทุกงวด'], [100, '100 งวดล่าสุด'], [250, '250 งวดล่าสุด'], [500, '500 งวดล่าสุด']].map(function (o) { return '<option value="' + o[0] + '"' + (sc.win === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></label>' +
-    '<label class="f" for="scIt">รอบจำลอง<select id="scIt">' + [2000, 10000, 50000, 200000].map(function (o) { return '<option value="' + o + '"' + (sc.iters === o ? ' selected' : '') + '>' + fmtNum(o) + '</option>'; }).join('') + '</select></label>' +
-    '<label class="f" for="scSeed">Seed (ผลซ้ำได้)<input id="scSeed" inputmode="numeric" value="' + sc.seed + '"></label>' +
-    (sc.mode >= 2 ? '<label class="f" for="scT">เลือกกี่เลข<select id="scT">' + [5, 10, 20].map(function (o) { return '<option value="' + o + '"' + (sc.T === o ? ' selected' : '') + '>' + o + '</option>'; }).join('') + '</select></label>' : '') +
-    (sc.mode === 3 ? '<label class="f" for="scL">ดูย้อนหลังกี่งวด<select id="scL">' + [30, 60, 120, 250].map(function (o) { return '<option value="' + o + '"' + (sc.L === o ? ' selected' : '') + '>' + o + '</option>'; }).join('') + '</select></label>' : '') +
-    '<div><button type="button" class="btn primary" id="scRun" data-act="run"' + (sc.busy ? ' disabled' : '') + '>' + (sc.busy ? 'กำลังคำนวณ…' : 'รันสแกน') + '</button></div></div>' +
-    '<div class="prog" style="margin-top:14px" role="progressbar" aria-label="ความคืบหน้า" aria-valuemin="0" aria-valuemax="100"><i id="pbar"></i></div></div>' +
-    '<div id="scanOut" aria-live="polite"></div>';
-  renderScanOut();
-  if (!sc.ran && !sc.busy) { sc.ran = true; runScan(); }
-}
-async function runScan() {
-  var sc = S.scan; if (sc.busy) return;
-  var mode = sc.mode, n = sc.n, K = Math.pow(10, n), sub = sc.win ? DR.slice(-sc.win) : DR, vals = seriesVals(sub, n);
-  if (!vals.length) { $('#scanOut').innerHTML = '<div class="card empty">ไม่มีงวดที่มีเลขครบ ' + n + ' หลักในช่วงที่เลือก</div>'; return; }
-  sc.busy = true; var btn = $('#scRun'); if (btn) { btn.disabled = true; btn.textContent = 'กำลังคำนวณ…'; }
-  var tick = async function (f) { var b = $('#pbar'); if (b) b.style.width = (f * 100).toFixed(0) + '%'; await new Promise(function (r) { setTimeout(r, 0); }); };
-  try {
-    var base = { mode: mode, n: n, K: K, W: vals.length, iters: sc.iters, seed: sc.seed, T: sc.T, L: sc.L, win: sc.win };
-    if (mode === 1) base.res = await mcScan({ K: K, W: vals.length, obs: countVals(vals, K), iters: sc.iters, seed: sc.seed }, tick);
-    else if (mode === 2) base.res = await mcBoot({ K: K, vals: vals, T: sc.T, iters: sc.iters, seed: sc.seed }, tick);
-    else base.res = await backtest({ K: K, vals: vals, T: sc.T, L: Math.min(sc.L, Math.max(1, vals.length - 20)), iters: sc.iters, seed: sc.seed }, tick);
-    base.obs = countVals(vals, K);
-    sc.out = base;
-  } catch (e) { sc.out = null; }
-  sc.busy = false;
-  if (S.tab === 'scan') {
-    var b2 = $('#pbar'); if (b2) b2.style.width = '100%';
-    var rb = $('#scRun'); if (rb) { rb.disabled = false; rb.textContent = 'รันสแกน'; }
-    renderScanOut();
-  }
-}
-function testRow(name, obs, mean, p) {
-  return '<tr><td>' + name + '</td><td class="num">' + obs + '</td><td class="num">' + mean + '</td><td class="num">' + fmtP(p) + '</td><td>' + (p <= 0.05 ? '<span class="pill warn">! เกินช่วงสุ่ม</span>' : '<span class="pill ok">✓ อยู่ในช่วงสุ่ม</span>') + '</td></tr>';
-}
-function renderScanOut() {
-  var o = S.scan.out, host = $('#scanOut'); if (!host) return;
-  if (!o) { host.innerHTML = '<div class="card empty">' + (S.scan.busy ? 'กำลังรันการจำลอง…' : 'กด รันสแกน เพื่อเริ่ม') + '</div>'; return; }
-  var r = o.res, head = '<p class="sub">ผลจาก ' + fmtNum(o.W) + ' งวด' + (o.win ? ' (ล่าสุด ' + o.win + ')' : '') + ' · เลขท้าย ' + o.n + ' ตัว · ' + fmtNum(o.mode === 2 ? r && r.iters : o.iters) + ' รอบ · seed ' + o.seed + '</p>';
-  if (!r) { host.innerHTML = '<div class="card empty">ข้อมูลไม่พอสำหรับการทดสอบนี้</div>'; return; }
-  var html = '';
-  if (o.mode === 1) {
-    var tests = [testRow('χ² ความกระจายรวม', r.chiObs.toFixed(1), r.chiMean.toFixed(1), r.pChi), testRow('เลขที่ออกซ้ำสูงสุด (ครั้ง)', r.maxObs, r.maxMean.toFixed(1), r.pMax)];
-    tests.push(o.K <= 100 ? testRow('เลขที่หลุดช่วงสุ่ม 95% (จาก 100)', r.outObs, r.outMean.toFixed(1), r.pOut) : testRow('เลขที่ออกตั้งแต่ 2 ครั้ง', r.collObs, r.collMean.toFixed(1), r.pColl));
-    var ps = [r.pChi, r.pMax, o.K <= 100 ? r.pOut : r.pColl], flagged = ps.filter(function (p) { return p <= 0.05; }).length;
-    var verdict = flagged === 0 ? 'ข้อมูลช่วงนี้สอดคล้องกับการสุ่มสม่ำเสมอ ไม่พบเลขหรือรูปแบบที่เบี่ยงเกินความบังเอิญ'
-      : 'มี ' + flagged + ' จาก 3 ตัวชี้วัดที่หลุดช่วงสุ่ม 95% การทดสอบหลายตัวพร้อมกันมีโอกาสได้ผลบวกลวงราว 1 ใน 7 ครั้ง ควรยืนยันด้วยช่วงข้อมูลอื่น';
-    var order = orderBy(Float64Array.from(Array.prototype.map.call(r.z, Math.abs)), o.K, 'desc'), list = '';
-    for (var i = 0; i < 8; i++) {
-      var k = order[i];
-      list += '<tr><td class="num">' + pad(k, o.n) + '</td><td class="num">' + o.obs[k] + '</td><td class="num">' + r.lo[k] + '–' + r.hi[k] + '</td><td class="num">' + (r.z[k] >= 0 ? '+' : '') + r.z[k].toFixed(2) + '</td><td>' + (o.obs[k] < r.lo[k] || o.obs[k] > r.hi[k] ? '<span class="pill warn">! นอกช่วง</span>' : '<span class="pill ok">✓ ในช่วง</span>') + '</td></tr>';
-    }
-    var grid = '';
-    if (o.K === 100) {
-      var outSet = {}; r.outCells.forEach(function (k) { outSet[k] = 1; });
-      grid = '<div class="card"><h3>แผนที่ความเบี่ยงเบน</h3><p class="sub">แถว = หลักสิบ คอลัมน์ = หลักหน่วย กรอบแดง = นอกช่วงสุ่ม 95%</p><div class="hgrid" style="--cols:10"><div class="hh"></div>';
-      for (var c = 0; c < 10; c++) grid += '<div class="hh">' + c + '</div>';
-      for (var rr = 0; rr < 10; rr++) {
-        grid += '<div class="hh">' + rr + '</div>';
-        for (c = 0; c < 10; c++) { var kk = rr * 10 + c; grid += hcell(pad(kk, 2), o.obs[kk], r.z[kk] / 3, 'เลข ' + pad(kk, 2) + ' ออก ' + o.obs[kk] + ' ครั้ง · ช่วงสุ่ม 95% = ' + r
+loadData();
+</script>
+</body></html>
